@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    /* border: 1px solid; */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.max-width {
+    /* max-width: 2300px; */
+    /* border: 1px solid; */
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+     /* border: 1px solid; */
+     max-width: 300px;
+     /* display: grid; */
+     border-radius: 20px;
+     box-shadow: 5px 0 20px #888888;
+     margin-right: 30px;
+     transition: all .5s;
+    }
+    
+    .card .image {
+        width: 300px;
+        height: 200px;
+    }
+    
+    .card .image img {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+}
+
+.card:hover {
+    transform: scale(1.12,1.12);
+}
+
+.card .about-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+.card .about-card .days {
+    color: #2666CF;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: .89em;
+}
+
+.card .about-card .title-card {
+    color: black;
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.card .about-card .desc-card {
+    text-align: center;
+    color: #888888;
+}
+
+.card .footer-card {
+    /* border: 1px solid; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* justify-items: center; */
+    /* text-align: justify; */
+    /* align-items: center; */
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #9C51E0;
+}
+
+.footer-card .footer {
+    /* border: 1px solid; */
+    border-right: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-card .footer  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    
+}
+
+.footer-card .footer .count {
+    color: white;
+    font-family: 'Poppins';
+    font-size: 18px;
+}
+
+.footer-card .footer .desc-footer {
+    text-transform: uppercase;
+    font-family: 'Poppins';
+    font-size: 14px;
+    color: white;
+}
+
+.footer-card .footer:last-child {
+    border: none;
+}
+
+
+@media (max-width: 650px) {
+   .card {
+       /* display: flex; */
+       margin: 20px 0;
+   }
+
+}
+
